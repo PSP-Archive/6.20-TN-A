@@ -1,0 +1,13 @@
+	.set noreorder
+
+#include "pspstub.s"
+
+	STUB_START	"LoadExecForKernel",0x00090011,0x00070005
+	STUB_FUNC	0xAEFEF0F4,sceKernelExitVSHVSH620
+	STUB_FUNC	0x783EA19F,sceKernelLoadExecVSHMs1620
+	STUB_FUNC	0x254F01CB,sceKernelLoadExecVSHMs2620
+	STUB_FUNC	0xE09DAFDC,sceKernelLoadExecVSHMs3620
+	STUB_FUNC	0xEFA048F1,sceKernelLoadExecVSHMs4620
+	STUB_FUNC	0x73BAD4F8,sceKernelLoadExecVSHDisc620
+	STUB_FUNC	0xD364D324,sceKernelLoadExecVSHDiscUpdater620
+	STUB_END
